@@ -4,6 +4,7 @@
 # Set some color env vars
 set GREEN '\033[1;32m';
 set YELLOW '\033[1;33m'
+set PURPLE '\033[0;31m'
 set NC '\033[0m'
 
 # Install deps
@@ -20,6 +21,11 @@ end
 function green_print 
 	echo -e "$GREEN$argv$NC"
 end
+
+function red_print 
+	echo -e "$PURPLE$argv$NC"
+end
+
 
 function print_installed_version
 	yellow_print "Installed $argv[1] version $argv[2]"
@@ -67,7 +73,7 @@ else
 end
 
 # Install go (needed for ghq)
-if ! type -q go
+if ! type -q gasf
 	set -l GO_FOLDER "/usr/local/go"
 	set -l GO_VERSION "go1.17.2.linux-amd64.tar.gz"
 	set -l GO_URL "https://golang.org/dl/$GO_VERSION"
@@ -94,6 +100,15 @@ else
 	print_already_installed_version "ghq" (ghq --version)
 end
 
+# Install exa
+if ! type -q exa
+	cargo install exa
+	# Cargo packages are already added to path in ~/.config/fish/config.fish
+	print_installed_version "exa" (exa --version)[2]
+else 
+	print_already_installed_version "exa" (exa --version)[2]
+end
+
 # Install fisher
 if ! type -q fisher
 	echo "Installing fisher";
@@ -109,6 +124,13 @@ if type -q fisher
 	green_print (fisher list)
 	fisher install (fisher list)
 	print_installed_version "green" (fisher install (fisher list))
+end
+
+# Install fnm
+if ! type -q fnm
+	cargo install fnm
+else 
+	print_already_installed_version "fnm" (fnm --version)
 end
 
 # Source the config file

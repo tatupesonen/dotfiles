@@ -14,6 +14,7 @@ https://www.atlassian.com/git/tutorials/dotfiles
 [fzf](https://github.com/junegunn/fzf) - 🌸 A command-line fuzzy finder  
 [bat](https://github.com/sharkdp/bat) - A cat(1) clone with wings  
 [tmux](https://github.com/tmux/tmux) - terminal multiplexer
+[exa](https://github.com/ogham/exa) - modern replacement for ls
 
 ## Toolchain requirements
 [Rust](https://www.rust-lang.org/)  

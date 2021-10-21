@@ -22,3 +22,6 @@ fish_add_path $HOME/.cargo/bin
 
 # Go
 fish_add_path /usr/local/go/bin
+
+# Add Go packages to path
+set GOPATH $HOME/go
