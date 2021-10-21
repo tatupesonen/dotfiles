@@ -40,6 +40,7 @@ alias config "/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 To install the dotfiles on a fresh system, run the following command:  
 ```bash
 git clone --bare git@github.com:tatupesonen/dotfiles.git ~/.dotfiles
+config checkout
 ```
 This will clone this repository into your user's home folder.
 
