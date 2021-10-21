@@ -21,4 +21,4 @@ alias config "/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 fish_add_path $HOME/.cargo/bin
 
 # Go
-# fish_add_path /usr/local/go/bin
+fish_add_path /usr/local/go/bin
