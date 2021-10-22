@@ -25,3 +25,9 @@ fish_add_path /usr/local/go/bin
 
 # Add Go packages to path
 set GOPATH $HOME/go
+
+# Add WSL2 Docker to path
+alias docker "com.docker.cli.exe"
+
+# GPG sign
+export GPG_TTY=(tty)
