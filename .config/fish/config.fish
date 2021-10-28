@@ -2,6 +2,11 @@
 alias ll "exa -l -g --icons"
 alias lla "ll -a"
 
+# Only replace vim with neovim if it exists
+if type -q nvim
+    alias vim "nvim"
+end
+
 # Other aliases
 alias g "git"
 
