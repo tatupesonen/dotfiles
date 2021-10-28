@@ -1,10 +1,13 @@
 call plug#begin('~/.config/nvim/plugged')
-    " Telescoep
-    Plug 'nvim-lua/plenary.nvim'
-    Plug 'nvim-telescope/telescope.nvim'
+    " fzf    
+    Plug '~/.fzf'
+    Plug 'junegunn/fzf.vim'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
     " Theme
     Plug 'joshdick/onedark.vim'
+    " Fzf switcher
+    Plug 'kien/ctrlp.vim'
     " Intellisense
     Plug 'neovim/nvim-lspconfig'
 call plug#end()
