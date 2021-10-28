@@ -36,3 +36,6 @@ alias docker "com.docker.cli.exe"
 
 # GPG sign
 export GPG_TTY=(tty)
+
+# Add local binaries to path
+fish_add_path -m ~/.local/bin
