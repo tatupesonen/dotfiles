@@ -5,12 +5,15 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
     " Theme
-    Plug 'joshdick/onedark.vim'
+    Plug 'pacokwon/onedarkhc.vim'
     Plug 'gruvbox-community/gruvbox'
     " Fzf switcher
     Plug 'kien/ctrlp.vim'
     " Intellisense
     Plug 'neovim/nvim-lspconfig'
+    " Autocompletion
+    Plug 'nvim-lua/completion-nvim'
+    Plug 'ms-jpq/coq_nvim', { 'branch': 'coq' }
     " Airline
     Plug 'vim-airline/vim-airline'
 

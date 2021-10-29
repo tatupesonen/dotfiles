@@ -24,7 +24,6 @@ alias config "/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 # Cargo
 fish_add_path $HOME/.cargo/bin
-
 # Go
 fish_add_path /usr/local/go/bin
 
@@ -39,3 +38,9 @@ export GPG_TTY=(tty)
 
 # Add local binaries to path
 fish_add_path -m ~/.local/bin
+fish_add_path -m /usr/local/bin
+fish_add_path -m /usr/local
+
+if type -q yarn
+    fish_add_path -m (yarn global bin)
+end

@@ -14,6 +14,7 @@ set nu
 set nowrap
 set scrolloff=8
 set incsearch
+" enable true color
 set termguicolors
 set signcolumn=yes
 set shell=fish
