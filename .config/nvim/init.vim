@@ -35,3 +35,4 @@ highlight NonText ctermbg=none
 
 highlight Normal guibg=none
 highlight NonText guibg=none
+let g:airline_powerline_fonts=1
