@@ -10,11 +10,18 @@ end
 # Other aliases
 alias g "git"
 
+# Search branches with fzf
+alias gf "git branch | fzf | xargs git checkout"
+
+# Bind same command to CTRL + f
+bind \cf 'gf'
+
 # fzf preview files with bat
 alias fzp "fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
 
 # Bind CTRL + R to peco
 bind \cr 'peco_select_history (commandline -b)'
+
 
 # Init starship prompt
 starship init fish | source
