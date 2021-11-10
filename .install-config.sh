@@ -13,6 +13,7 @@ sudo apt install \
 	tmux \
 	git \
 	peco \
+    ninja-build \
 
 function yellow_print 
 	echo -e "$YELLOW$argv$NC"
@@ -31,10 +32,27 @@ function print_installed_version
 	yellow_print "Installed $argv[1] version $argv[2]"
 end
 
-
 function print_already_installed_version
 	green_print "$argv[1] is already installed $argv[2]"
 end
+
+# Make a folder for LSPs if they don't already exist
+
+function install_lsps
+    set -l LSP_INSTALL_LOCATION "~/.lsp-installs"
+    if ! test -d ~/.lsp-installs
+        mkdir ~/.lsp-installs
+    end
+    
+    fish -c "git clone https://github.com/sumneko/lua-language-server $LSP_INSTALL_LOCATION/lua"
+    git clone https://github.com/sumneko/lua-language-server $LSP_INSTALL_LOCATION/lua
+    cd $LSP_INSTALL_LOCATION/lua
+    cd 3rd/luamake
+    chmod +x ./compile/install.sh
+    fish -c "./compile/install.sh"
+end
+
+install_lsps
 
 # Install Rustup & Rust
 if ! type -q rustup
