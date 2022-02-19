@@ -25,10 +25,17 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'hrsh7th/cmp-vsnip'
     Plug 'hrsh7th/vim-vsnip'
 
+    " Auto pairs
+    Plug 'jiangmiao/auto-pairs'
+
+    " Discord presence
+    Plug 'andweeb/presence.nvim' 
+    
     " Theme
     Plug 'pacokwon/onedarkhc.vim'
     Plug 'gruvbox-community/gruvbox'
     Plug 'fenetikm/falcon'
+
     " Fzf switcher
     Plug 'kien/ctrlp.vim'
     " Autocompletion

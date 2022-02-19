@@ -19,7 +19,7 @@ let mapleader = " "
 source $HOME/.config/nvim/plugins.vim
 
 " Source plugin configs
-source $HOME/.config/nvim/plugin_cfg/lspconfig.rc.vim
+luafile $HOME/.config/nvim/plugin_cfg/lspconfig.lua
 source $HOME/.config/nvim/plugin_cfg/treesitter.rc.vim
 source $HOME/.config/nvim/plugin_cfg/nvim-cmp.rc.vim
 

@@ -3,14 +3,14 @@ window:
     columns: 140
     lines: 38
   padding:
-    x: 10
-    y: 10
-  decorations: none
+    x: 8
+    y: 5
+  decorations: transparent
 
 scrolling:
   history: 10000
   multiplier: 3
-background_opacity: 0.95
+background_opacity: 0.9
 
 
 font:
