@@ -41,6 +41,13 @@ nnoremap <leader>gb       :G blame<CR>
 " Df to exit insert mode
 inoremap df <Esc>
 
+" Theme stuff
+let g:falcon_airline = 1
+let g:airline_theme = 'falcon'
+let g:falcon_background = 0
+let g:falcon_inactive = 1
+colorscheme falcon
+
 
 set cmdheight=1
 set wildignore+=*/node_modules/*

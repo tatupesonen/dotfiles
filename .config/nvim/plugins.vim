@@ -28,6 +28,7 @@ call plug#begin('~/.config/nvim/plugged')
     " Theme
     Plug 'pacokwon/onedarkhc.vim'
     Plug 'gruvbox-community/gruvbox'
+    Plug 'fenetikm/falcon'
     " Fzf switcher
     Plug 'kien/ctrlp.vim'
     " Autocompletion

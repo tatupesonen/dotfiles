@@ -24,7 +24,7 @@ source $HOME/.config/nvim/plugin_cfg/lspconfig.rc.vim
 source $HOME/.config/nvim/plugin_cfg/treesitter.rc.vim
 source $HOME/.config/nvim/plugin_cfg/nvim-cmp.rc.vim
 
-colorscheme onedarkhc
+colorscheme falcon
 
 " enable transparency
 highlight Normal ctermbg=none
