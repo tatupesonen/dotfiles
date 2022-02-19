@@ -18,17 +18,11 @@ let mapleader = " "
 " Sourcing
 source $HOME/.config/nvim/sets.vim
 source $HOME/.config/nvim/plugins.vim
-source $HOME/.config/nvim/mappings.vim
 
 " Source plugin configs
 source $HOME/.config/nvim/plugin_cfg/lspconfig.rc.vim
 source $HOME/.config/nvim/plugin_cfg/treesitter.rc.vim
-luafile $HOME/.config/nvim/plugin_cfg/nvim-cmp.lua
-
-" Maps
-nnoremap <leader>ff <cmd>GFiles<cr>
-nnoremap <leader>fi <cmd>Rg<cr>
-nnoremap <leader>fb <cmd>Buffers<cr>
+source $HOME/.config/nvim/plugin_cfg/nvim-cmp.rc.vim
 
 colorscheme onedarkhc
 

@@ -7,6 +7,9 @@ call plug#begin('~/.config/nvim/plugged')
     " Git stuff
     Plug 'tpope/vim-fugitive'
 
+    " Intellisense
+    Plug 'neovim/nvim-lspconfig'
+
     " Discord presence :zoop:
     Plug 'andweeb/presence.nvim'
 
@@ -27,8 +30,6 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'gruvbox-community/gruvbox'
     " Fzf switcher
     Plug 'kien/ctrlp.vim'
-    " Intellisense
-    Plug 'neovim/nvim-lspconfig'
     " Autocompletion
     Plug 'nvim-lua/completion-nvim'
     Plug 'ms-jpq/coq_nvim', { 'branch': 'coq' }
