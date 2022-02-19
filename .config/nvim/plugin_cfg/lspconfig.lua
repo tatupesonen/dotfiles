@@ -9,7 +9,6 @@ vim.api.nvim_set_keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<C
 local on_attach = function(client, bufnr)
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
     local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
-    vim.fn
 
     -- Let's try Omnifunc.
     buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
