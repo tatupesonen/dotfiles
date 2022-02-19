@@ -16,7 +16,6 @@ highlight LineNr cterm=none ctermfg=240 guifg=#2b506e guibg=#000000
 let mapleader = " "
 
 " Sourcing
-source $HOME/.config/nvim/sets.vim
 source $HOME/.config/nvim/plugins.vim
 
 " Source plugin configs
@@ -24,6 +23,8 @@ source $HOME/.config/nvim/plugin_cfg/lspconfig.rc.vim
 source $HOME/.config/nvim/plugin_cfg/treesitter.rc.vim
 source $HOME/.config/nvim/plugin_cfg/nvim-cmp.rc.vim
 
+
+source $HOME/.config/nvim/sets.vim
 colorscheme falcon
 
 " enable transparency
