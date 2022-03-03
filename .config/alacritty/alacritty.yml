@@ -5,26 +5,26 @@ window:
   padding:
     x: 8
     y: 5
-  decorations: transparent
+  decorations: Full
 
 scrolling:
   history: 10000
   multiplier: 3
-background_opacity: 0.9
+window_opacity: 0.9
 
 
 font:
   normal:
-    family: SFMono Nerd Font
+    family: Hack NF
     style: Regular
   bold:
-    family: SFMono Nerd Font
+    family: Hack NF
     style: Bold
   bold_italic:
-    family: SFMono Nerd Font
+    family: Hack NF
     style: Bold Italic
   italic:
-    family: SFMono Nerd Font
+    family: Hack NF
     style: Regular Italic
 # Font configuration
 #font:

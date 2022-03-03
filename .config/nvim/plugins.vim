@@ -16,12 +16,15 @@ call plug#begin('~/.config/nvim/plugged')
     " Tree sitter
     Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 
+    " Tests
+    Plug 'vim-test/vim-test' 
+
     " Autocompletion
-	Plug 'hrsh7th/cmp-nvim-lsp'
-	Plug 'hrsh7th/cmp-buffer'
-	Plug 'hrsh7th/cmp-path'
-	Plug 'hrsh7th/cmp-cmdline'
-	Plug 'hrsh7th/nvim-cmp'
+    Plug 'hrsh7th/cmp-nvim-lsp'
+    Plug 'hrsh7th/cmp-buffer'
+    Plug 'hrsh7th/cmp-path'
+    Plug 'hrsh7th/cmp-cmdline'
+    Plug 'hrsh7th/nvim-cmp'
     Plug 'hrsh7th/cmp-vsnip'
     Plug 'hrsh7th/vim-vsnip'
 
@@ -42,6 +45,12 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'nvim-lua/completion-nvim'
     Plug 'ms-jpq/coq_nvim', { 'branch': 'coq' }
     " Airline
-    Plug 'vim-airline/vim-airline'
+    Plug 'nvim-lualine/lualine.nvim'
+    Plug 'kyazdani42/nvim-web-devicons'
 
+    " Top bar
+    Plug 'romgrk/barbar.nvim' 
+    
+    " Nerdtree
+    Plug 'preservim/nerdtree' 
 call plug#end()
